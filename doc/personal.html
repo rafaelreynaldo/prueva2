@@ -1,0 +1,38 @@
+@main("Welcome to Play") {
+
+
+
+
+
+
+<form method="post" action="/personal/save">
+    <label>Nombre</label><input type="text" id="nombre" name="nombre">
+    <label>Apellido</label><input type="text" id="apellido" name="apellido">
+    <input type="submit" value="guardar">
+
+
+</form>
+
+
+
+
+<table border="2">
+    <tr>
+        <th>nombre</th>
+
+        <th>apellido</th>
+
+
+    </tr>
+    @for(obj<-listado){
+
+    <tr>
+        <td>@obj.nombre</td>
+        <td>@obj.apellido</td>
+    </tr>
+
+
+    }
+
+</table>
+}
