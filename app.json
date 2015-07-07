@@ -1,0 +1,13 @@
+{
+  "name":"prueva2",
+  "description":"prueva",
+  "scripts":{},
+  "env":{
+    "JAVA_OPTS":{
+      "required":true
+    }
+  },
+  "addons":[
+    "heroku-postgresql"
+  ]
+}
